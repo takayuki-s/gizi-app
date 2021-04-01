@@ -13,9 +13,12 @@
     </div>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
-        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
+        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>Group</label>
       </div>
       <div class='chat-room-form__field--right'>
+        <div class='field-input'>
+          <%= f.collection_select(:group_id, Group.all, :id, :name, {include_blank: "---選択してください---"}, {class: "group_form"}) %>
+        </div>
       </div>
     </div>
     <div class='chat-room-form__field'>
