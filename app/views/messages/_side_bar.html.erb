@@ -8,14 +8,11 @@
 </div>
 
 <div class="rooms text-info">
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom1</a>
+  <% @rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+        <a href="#"><%= room.name %></a>
+      </div>
     </div>
-  </div>
-  <div class="room">
-    <div class="room-name">
-      <a href="#">techroom2</a>
-    </div>
-  </div>
+  <% end %>
 </div>
