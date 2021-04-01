@@ -24,6 +24,14 @@
             <%= f.email_field :email%>
           </div>
         </div>
+        <div class='field'>
+          <div class='field-label'>
+            <%= f.label :group_id%>
+          </div>
+          <div class='field-input'>
+            <%= f.collection_select(:group_id, Group.all, :id, :name, {include_blank: "---選択してください---"}, {class: "group_form"}) %>
+          </div>
+        </div>
         <div class='actions'>
           <%= f.submit "Update", class: 'btn'%>
         </div>
