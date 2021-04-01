@@ -10,6 +10,13 @@
   float: left;
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
+    float: none;
+    width: 100%;
+  }
+}
+
 .account-page .account-page__inner:after {
   clear: both;
   content: "";
