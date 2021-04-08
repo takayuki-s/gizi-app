@@ -1,8 +1,2 @@
-console.log("ok")
-console.log("<%= @message.content %>")
 $(".messages").html("<%= j(render partial: 'message', collection: @messages) %>");
-$(function() {
-  $(".form-submit").click( function() {
-  $(".form_message").val("");
-  });
-});
+$(".form-message").val("");
